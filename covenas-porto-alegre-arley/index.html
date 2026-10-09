@@ -163,9 +163,9 @@ p{margin:0}
   <span class="hotel">Hotel Porto Alegre · viernes 9 al lunes 12 de octubre</span>
   <span class="cuenta" id="cuenta" hidden></span>
 </header>
-<section class="clave" aria-label="Datos de la salida"><div class="dato"><span class="ic"><i data-lucide="calendar-days"></i></span><div><small>Salida</small><b>Viernes 9 de octubre</b><span>Regreso: lunes 12 de octubre · salida del hotel a las 10:00 a.m. (sujeto a cambios)</span></div></div><div class="dato"><span class="ic"><i data-lucide="map-pin"></i></span><div><small>Punto de encuentro</small><b>8:00 p.m. · Bahía de Hacienda Niquía</b><span>Sobre la Autopista Norte, antes de la entrada a Machado · llega 15 minutos antes</span></div></div><div class="dato"><span class="ic"><i data-lucide="bus-front"></i></span><div><small>Placa del bus</small><b>XVN 796</b><span>Los puestos se asignan por orden de reserva</span></div></div></section>
-<section class="guia"><span class="inicial">A</span><div><small>Tu coordinador de viaje</small><b>Arley</b>
-      <span id="tel">Celular: 300 267 7609 · solo llamadas al momento de la salida</span><div class="acc"><a class="btn navy" href="tel:+573002677609"><i data-lucide="phone"></i>Llamar</a><button class="btn gold" type="button" id="copiar"><i data-lucide="copy"></i>Copiar número</button></div></div></section>
+<section class="clave" aria-label="Datos de la salida"><div class="dato"><span class="ic"><i data-lucide="calendar-days"></i></span><div><small>Salida</small><b>Viernes 9 de octubre</b><span>Regreso: lunes 12 de octubre · salida del hotel a las 10:00 a.m. (sujeto a cambios)</span></div></div><div class="dato"><span class="ic"><i data-lucide="map-pin"></i></span><div><small>Punto de encuentro</small><b>8:00 p.m. · Bahía de Hacienda Niquía</b><span>Sobre la Autopista Norte, antes de la entrada a Machado · llega 15 minutos antes</span></div></div><div class="dato"><span class="ic"><i data-lucide="bus-front"></i></span><div><small>Placa del bus</small><b>SMH 696</b><span>Los puestos se asignan por orden de reserva</span></div></div></section>
+<section class="guia"><span class="inicial">C</span><div><small>Tu guía de viaje</small><b>Cristina Palacio</b>
+      <span id="tel">Celular: 314 873 2608 · solo llamadas al momento de la salida</span><div class="acc"><a class="btn navy" href="tel:+573148732608"><i data-lucide="phone"></i>Llamar</a><button class="btn gold" type="button" id="copiar"><i data-lucide="copy"></i>Copiar número</button></div></div></section>
 
 <p class="aviso"><b>La puntualidad es muy importante</b> para que se cumplan los horarios del viaje.</p>
 <section class="sec"><span class="tit">Importante, léelo antes de viajar</span><div class="letra importante"><p><b>Vamos por la vía nueva: no hay parada en restaurantes.</b> Este fin de semana hay muchos buses en la vía y el acceso a los restaurantes va a estar complicado. Come antes de salir y lleva mecato y bebidas para el camino.</p><p><b>Check-in a las 3:00 p.m.</b> En todos los hoteles se maneja check-in. Si al llegar las habitaciones todavía están ocupadas, el hotel te guarda las maletas y te presta baños para cambiarte, para que vayas a disfrutar mientras te entregan la habitación.</p><p><b>El guía</b> representa a la agencia: te informa y se asegura de que se cumpla el programa. No está autorizado para vender ni organizar planes diferentes o posteriores al viaje. Para cualquier otra cosa, comunícate con tu asesor de viajes.</p></div></section>
@@ -247,7 +247,7 @@ function cuenta() {
 cuenta(); setInterval(cuenta, 60000);
 const cp = document.getElementById("copiar");
 if (cp) cp.addEventListener("click", async (ev) => {
-  try { await navigator.clipboard.writeText("3002677609"); cp.lastChild.textContent = "Copiado"; }
+  try { await navigator.clipboard.writeText("3148732608"); cp.lastChild.textContent = "Copiado"; }
   catch (err) { const r = document.createRange(); r.selectNodeContents(document.getElementById("tel")); getSelection().removeAllRanges(); getSelection().addRange(r); }
 });
 const IK = "salida-covenas-porto-alegre-arley-imperdibles", imps = document.getElementById("imps");
